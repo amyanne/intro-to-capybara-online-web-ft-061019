@@ -3,5 +3,7 @@ class Application < Sinatra::Base
   get '/' do
     erb :index
   end
+  
+  Rack::Builder.parse_file('config.ru').first
 
 end
