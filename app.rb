@@ -4,6 +4,6 @@ class Application < Sinatra::Base
     erb :index
   end
   
-  Rack::Builder.parse_file('config.ru').first
+
 
 end
